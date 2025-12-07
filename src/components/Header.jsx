@@ -26,16 +26,18 @@ const Header = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <div className="text-xl font-bold font-space">
-                    <span className="gradient-text">Yaswanth.</span>
+                    <span className="gradient-text">Yaswanth Reddy.</span>
                 </div>
                 <nav className="hidden md:flex items-center space-x-8">
-                    {['About', 'Experience', 'Projects', 'Skills', 'Contact'].map((item) => (
+                    {['About', 'Skills', 'Experience', 'Projects', 'Education', 'Contact'].map((item) => (
                         <Link
                             key={item}
                             to={item.toLowerCase()}
+                            spy={true}
+                            activeClass="active"
                             smooth={true}
                             duration={500}
-                            className="nav-link cursor-pointer text-sm font-medium uppercase tracking-wider"
+                            className="nav-link cursor-pointer text-sm font-medium uppercase tracking-wider relative transition-all duration-300"
                             offset={-100}
                         >
                             {item}

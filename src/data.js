@@ -98,8 +98,8 @@ export const resumeData = {
     education: [
         {
             school: "BITS Pilani, India",
-            degree: "PG Certificate in Artificial Intelligence & Machine Learning",
-            date: "Nov 2024 -- Present"
+            degree: "PG Certification Program in Artificial Intelligence & Machine Learning",
+            date: "Nov 2024 -- Oct 2025"
         },
         {
             school: "JNTU Kakinada, India",
@@ -108,6 +108,7 @@ export const resumeData = {
         }
     ],
     certifications: [
+        "AI & ML Certified - BITS Pilani (2025)",
         "Microsoft AI Innovators Hub – Best Volunteer (2025)",
         "NxtWave CCBP 4.0 Intensive – Full Stack Developer (2024)",
         "Finalist – Microsoft Bhashini Hackathon (2025)"

@@ -22,8 +22,8 @@
   /* Darker Sky Blue for contrast */
   --accent-secondary: #7c3aed;
   /* Darker Violet */
-  --glass-bg: rgba(0, 0, 0, 0.05);
-  /* Dark tint for glass on light bg */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  /* White tint for glass on light bg */
   --glass-border: rgba(0, 0, 0, 0.1);
 }
 
@@ -79,4 +79,22 @@ body {
 
 .btn-primary:hover {
   @apply -translate-y-1 shadow-xl shadow-purple-900/60;
+}
+
+.nav-link.active {
+  color: var(--accent-primary);
+  text-shadow: 0 0 8px rgba(14, 165, 233, 0.5);
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-primary);
+  border-radius: 2px;
+  box-shadow: 0 0 8px var(--accent-primary);
 }
