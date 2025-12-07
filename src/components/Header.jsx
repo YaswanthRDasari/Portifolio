@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
+import { resumeData } from '../data';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -39,6 +41,30 @@ const Header = () => {
                             {item}
                         </Link>
                     ))}
+
+                    <div className="flex items-center space-x-4 pl-4 border-l border-gray-300 dark:border-gray-700">
+                        {resumeData.social.map((social) => (
+                            <a
+                                key={social.name}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-xl hover:text-blue-500 transition-colors"
+                                title={social.name}
+                            >
+                                {social.name === 'GitHub' && <FaGithub />}
+                                {social.name === 'LinkedIn' && <FaLinkedin />}
+                            </a>
+                        ))}
+                        <a
+                            href={`mailto:${resumeData.email}`}
+                            className="text-xl hover:text-blue-500 transition-colors"
+                            title="Email"
+                        >
+                            <FaEnvelope />
+                        </a>
+                    </div>
+
                     <ThemeToggle />
                 </nav>
             </div>
