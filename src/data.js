@@ -23,7 +23,7 @@ export const resumeData = {
                 "Built RESTful microservices with caching & SQL indexing, boosting throughput by 30%.",
                 "Developed a real-time NLP Compliance Bot with <100ms latency for regulatory lookups.",
                 "Implemented secure RBAC, JWT, and OAuth access across distributed services.",
-                "Led AI sprint initiatives and mentoring; promoted within 10 months for technical impact."
+                "Critical platform-level optimizations - promoted within 10 months for technical impact."
             ]
         },
         {
